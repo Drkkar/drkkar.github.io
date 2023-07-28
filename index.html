@@ -8,75 +8,52 @@
         body {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        /* Barre du haut fixe */
-        .top-bar {
+        .navbar {
+            background-color: #333;
+            color: white;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 50px;
-            background-color: #333;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Barre du bas fixe */
-        .bottom-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background-color: #333;
-            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 10px;
         }
 
-        /* Icônes cliquables */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .content {
+            padding-top: 60px; /* Pour éviter que le contenu soit masqué par la barre */
+            text-align: center;
+        }
+
         .icon {
-            cursor: pointer;
-            padding: 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
-    <div class="top-bar">
-        Barre du haut (logo, titre, etc.)
+    <div class="navbar">
+        <div class="icon" id="menu-icon"></div>
+        <h1>Ma page d'accueil</h1>
+        <div class="icon" id="profile-icon"></div>
     </div>
 
-    <!-- Contenu principal de la page -->
-    <div style="margin-top: 50px;">
-        <h1>Bienvenue sur ma page d'accueil</h1>
-        <!-- Ajoutez ici le contenu de votre page -->
+    <div class="content">
+        <h2>Contenu de la page d'accueil</h2>
+        <p>Vous pouvez ajouter ici le contenu de votre page d'accueil.</p>
     </div>
-
-    <div class="bottom-bar">
-        <!-- Icônes cliquables -->
-        <div class="icon" onclick="showMessages()">Messages</div>
-        <div class="icon" onclick="showMenu()">Menu</div>
-        <div class="icon" onclick="showProfile()">Profil</div>
-    </div>
-
-    <script>
-        // Fonctions pour les icônes cliquables (vous pouvez les personnaliser)
-        function showMessages() {
-            alert('Messages');
-        }
-
-        function showMenu() {
-            alert('Menu');
-        }
-
-        function showProfile() {
-            alert('Profil');
-        }
-    </script>
 </body>
 </html>
