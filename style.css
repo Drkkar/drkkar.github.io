@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+
+  .card {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .upper-half {
+    height: 50%;
+    background-color: #4CAF50; /* Couleur pour la moitié supérieure */
+    position: relative;
+  }
+  
+  .lower-half {
+    height: 50%;
+    background-color: #fff; /* Fond blanc pour la moitié inférieure */
+  }
+  
+  .icon-container {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon {
+    width: 40px; /* Taille de l'icône, adaptez-la selon vos besoins */
+    height: 40px;
+  }
+  
+  .timer-container {
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: #4CAF50; /* Couleur de fond pour la pastille du timer */
+    border-radius: 50%;
+    padding: 5px; /* Espace interne dans la pastille */
+  }
+  
+  .timer {
+    color: #fff; /* Couleur du texte du timer */
+    font-size: 12px;
+  }
